@@ -1,3 +1,6 @@
+maximum = 0
+longest_length = 0
+
 def collatz(n):
     if n % 2 == 0:
         return n//2
@@ -13,9 +16,6 @@ def evalCollatz(n):
         length += 1
         k = collatz(k)
     return length
-
-maximum = 0
-longest_length = 0
 
 for i in range(2,1000000):
     collat = evalCollatz(i)
